@@ -27,9 +27,10 @@ echo "<hr>";
 echo str_repeat("Bruna ",5);
 
 echo"<hr>" ;
-
+// "If else" praticamente
 echo isset($nome) ? 'True': 'False';
 
 echo"<hr>" ;
-
+//"if else" praticamente 
 echo empty ($nomeCompleto) ? 'True': 'False';
+
