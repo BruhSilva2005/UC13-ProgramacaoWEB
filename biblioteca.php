@@ -147,39 +147,52 @@ class biblioteca {
     <body>
         <h1>Sistema de Biblioteca<h1>
             <h3>Digite seu nome: </h3>
-            <input name = "aluno" type = "name" id = "aluno">
+            <input name = "novoAluno" type = "name" id = "novoAluno">
             <br>
         <h3>Digite seu email: </h3>
-        <input name = "aluno" type = "email" id = "aluno">
+        <input name = "novoAluno" type = "email" id = "novoAluno">
         <br>  
     <h3>Digite seu telefone: </h3>
-        <input name = "aluno" type = "telephone" id = "aluno"
+        <input name = "novoAluno" type = "telephone" id = "novoAluno"
         placeholder="0000-0000">
         <br>
         <h3>Digite seu cpf: </h3>
-        <input name = "aluno" type = "cpf" id = "aluno"
+        <input name = "novoAluno" type = "cpf" id = "novoAluno"
         placeholder="000.000.000-00">
         <br>
         <h3>Digite seu celular: </h3>
-        <input name = "aluno" type = "telephone" id = "aluno"
+        <input name = "novoAluno" type = "telephone" id = "novoAluno"
         placeholder="00 00000-0000">
         <br>
         <h3>Digite sua Data de Nascimento: </h3>
-        <input name = "aluno" type = "date" id = "aluno"
+        <input name = "novoAluno" type = "date" id = "novoAluno"
         placeholder="00/00/0000">
         <br>
 
-  
+        <button type="submit value">Buscar</button>
 
+        <?php if($novoaAluno): ?>
 
+<div class="data-container" style="background-color: #e0e0e0;">
 
-        <button type="submit">Enviar</button>
-  
+    <h2 style="color: #555;">Dados do Aluno Cadastrado</h2>
 
+    <p><strong>Nome:</strong> <?= $novoaAluno->getNome() ?></p>
 
+    <p><strong>Email:</strong> <?= $novoaAluno->getEmail() ?></p>
 
+    <p><strong>Telefone:</strong> <?= $novoaAluno->getTelefone() ?></p>
 
-            <p>
+    <p><strong>CPF:</strong> <?= $novoaAluno->getCPF() ?></p>
+
+    <p><strong>Celular:</strong> <?=$novoaAluno->getCelular() ?></p>
+
+    <p><strong>Data de Nascimento:</strong> <?=$novoaAluno->getDataNascimento() ?></p>
+
+</div>
+
+<?php endif; ?>
+                 <p>
 
             Copyright &COPY; <?=date("d/m/Y H:i:s") ?>  - Todos os direitos sao reservados
 
