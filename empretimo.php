@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $dataDevolucao = $_POST['data_devolucao'];
 
-        $livro = new Livro($isbn, $ano_publicacao, $titulo);
+        $emprestimo = new emprestimo($aluno,$livro,$dataRetirada,$dataDevolucao);
 
     }
 
