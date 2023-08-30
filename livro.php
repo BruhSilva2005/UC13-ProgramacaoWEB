@@ -149,6 +149,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <?php endif; ?>
+    <p>
+            Copyright &COPY; <?=date("d/m/Y H:i:s") ?>  - Todos os direitos sao reservados
+    </p>
 
 </body>
 

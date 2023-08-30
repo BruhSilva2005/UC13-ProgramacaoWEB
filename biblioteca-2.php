@@ -65,18 +65,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Sistema de biblioteca</title>
-        <style>
-            body{
+<head>
+<meta charset="utf-8">
+<title>Sistema de biblioteca</title>
+<style>
+        body {
             font-family: Arial, sans-serif;
             margin: 5px;
             padding: 20px;
-            background-color: #f4f4f4;
-       } 
-       </style>
-    </head>
+            background-color: #F5FFFA;
+        }
+</style>
+</head>
     <body>
         <h1>Sistema de Biblioteca<h1>
             <h3>Digite seu nome: </h3>
@@ -126,6 +126,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 <?php endif; ?>
+<p>
+Copyright &COPY; <?=date("d/m/Y H:i:s") ?>  - Todos os direitos sao reservados
+</p>
 
 </body>
 
